@@ -61,6 +61,9 @@ $ python code/random_pick.py
 
 ### 소스코드 복사
 
+- 도커 컨테이너 저장소 <-> 로컬 저장소
+- https://docs.docker.com/engine/reference/commandline/cp/
+
 ```bash
 # 컨테이너로부터 작성된 파이썬 파일을
 # 로컬 환경으로 가져오기
@@ -74,3 +77,19 @@ Successfully copied 2.05kB to /home/user1/code/random-pick/
 
 ```
 
+---
+
+## Docker 활용 법
+
+
+### `docker exec`
+
+- 도커에서 실행 중인 컨테이너 내에서 명령어를 실행하기 위해 사용
+
+- ref : https://docs.docker.com/engine/reference/commandline/exec/
+
+
+### `docker` : -v(--volume) 옵션
+
+- Volume - 공유파일시스템
+- ref : https://docs.docker.com/engine/reference/run/#volume-shared-filesystems
